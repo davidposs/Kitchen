@@ -1,20 +1,26 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Milk : MonoBehaviour {
-    [SerializeField] private ParticleSystem particleSystem;
+    [SerializeField] private new ParticleSystem particleSystem;
 
 	// Use this for initialization
 	void Start () {
-		
+        particleSystem.Pause();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (this.transform.rotation.eulerAngles.y >= 90)
+        if (Math.Abs(this.transform.rotation.eulerAngles.x % 360) >= 90 
+            || Math.Abs(this.transform.rotation.eulerAngles.z % 360) >= 90)
         {
-
+            particleSystem.Play();
+        }
+        else
+        {
+            particleSystem.Pause();
         }
 	}
 }
