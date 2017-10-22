@@ -13,14 +13,16 @@ public class Milk : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Math.Abs(this.transform.rotation.eulerAngles.x % 360) >= 90 
-            || Math.Abs(this.transform.rotation.eulerAngles.z % 360) >= 90)
+        if ((Math.Abs(this.transform.rotation.eulerAngles.x % 360) >= 90 && Math.Abs(this.transform.rotation.eulerAngles.x % 360) <= 270)
+            || (Math.Abs(this.transform.rotation.eulerAngles.z % 360) >= 90 && Math.Abs(this.transform.rotation.eulerAngles.z % 360) <= 270))
         {
+            Debug.Log("Play");
             particleSystem.Play();
         }
         else
         {
-            particleSystem.Pause();
+            Debug.Log("Stop");
+            particleSystem.Stop();
         }
 	}
 }
