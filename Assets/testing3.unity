@@ -116,6 +116,66 @@ NavMeshSettings:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 67967c3a2d033f24f972f53675021339, type: 3}
   m_PrefabInternal: {fileID: 1239907094}
+--- !u!114 &193549896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 193549895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableWhenIdle: 1
+  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  allowedTouchControllers: 0
+  ignoredColliders: []
+  isGrabbable: 1
+  holdButtonToGrab: 1
+  stayGrabbedOnTeleport: 1
+  validDrop: 1
+  grabOverrideButton: 0
+  allowedGrabControllers: 0
+  grabAttachMechanicScript: {fileID: 193549897}
+  secondaryGrabActionScript: {fileID: 193549898}
+  isUsable: 0
+  holdButtonToUse: 1
+  useOnlyIfGrabbed: 0
+  pointerActivatesUseAction: 0
+  useOverrideButton: 0
+  allowedUseControllers: 0
+  usingState: 0
+--- !u!114 &193549897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 193549895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afa0b205791c9f4496bf2814aeac078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  precisionGrab: 1
+  rightSnapHandle: {fileID: 0}
+  leftSnapHandle: {fileID: 0}
+  throwVelocityWithAttachDistance: 0
+  throwMultiplier: 1
+  onGrabCollisionDelay: 0
+  destroyImmediatelyOnThrow: 1
+  breakForce: 1500
+--- !u!114 &193549898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 193549895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &193549899
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -356,35 +416,59 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 96099f261a388b844bdd80c870a8c001, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.85
+      value: 4.032
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 96099f261a388b844bdd80c870a8c001, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.412
+      value: 1.527
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 96099f261a388b844bdd80c870a8c001, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.145
+      value: 2.08
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 96099f261a388b844bdd80c870a8c001, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.12059043
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 96099f261a388b844bdd80c870a8c001, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.37940952
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 96099f261a388b844bdd80c870a8c001, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.04995019
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 96099f261a388b844bdd80c870a8c001, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9159757
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 96099f261a388b844bdd80c870a8c001, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 96099f261a388b844bdd80c870a8c001, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 96099f261a388b844bdd80c870a8c001, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 96099f261a388b844bdd80c870a8c001, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 96099f261a388b844bdd80c870a8c001, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 96099f261a388b844bdd80c870a8c001, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 96099f261a388b844bdd80c870a8c001, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96099f261a388b844bdd80c870a8c001, type: 3}
@@ -394,6 +478,66 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000013022835100, guid: 5e066acaf27e80e4087b54d44b324159,
     type: 2}
   m_PrefabInternal: {fileID: 1389505693}
+--- !u!114 &1216101650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1216101649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableWhenIdle: 1
+  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  allowedTouchControllers: 0
+  ignoredColliders: []
+  isGrabbable: 1
+  holdButtonToGrab: 1
+  stayGrabbedOnTeleport: 1
+  validDrop: 1
+  grabOverrideButton: 0
+  allowedGrabControllers: 0
+  grabAttachMechanicScript: {fileID: 1216101651}
+  secondaryGrabActionScript: {fileID: 1216101652}
+  isUsable: 0
+  holdButtonToUse: 1
+  useOnlyIfGrabbed: 0
+  pointerActivatesUseAction: 0
+  useOverrideButton: 0
+  allowedUseControllers: 0
+  usingState: 0
+--- !u!114 &1216101651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1216101649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afa0b205791c9f4496bf2814aeac078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  precisionGrab: 1
+  rightSnapHandle: {fileID: 0}
+  leftSnapHandle: {fileID: 0}
+  throwVelocityWithAttachDistance: 0
+  throwMultiplier: 1
+  onGrabCollisionDelay: 0
+  destroyImmediatelyOnThrow: 1
+  breakForce: 1500
+--- !u!114 &1216101652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1216101649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &1216101653
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -430,15 +574,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 67967c3a2d033f24f972f53675021339, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.85
+      value: 7.139
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 67967c3a2d033f24f972f53675021339, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.269
+      value: 1.7850002
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 67967c3a2d033f24f972f53675021339, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.145
+      value: 3.622
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 67967c3a2d033f24f972f53675021339, type: 3}
       propertyPath: m_LocalRotation.x
@@ -472,15 +616,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000010641120276, guid: 5e066acaf27e80e4087b54d44b324159, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.85
+      value: 1.94
       objectReference: {fileID: 0}
     - target: {fileID: 4000010641120276, guid: 5e066acaf27e80e4087b54d44b324159, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.357
+      value: 2.015
       objectReference: {fileID: 0}
     - target: {fileID: 4000010641120276, guid: 5e066acaf27e80e4087b54d44b324159, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -2.145
+      value: 5.153
       objectReference: {fileID: 0}
     - target: {fileID: 4000010641120276, guid: 5e066acaf27e80e4087b54d44b324159, type: 2}
       propertyPath: m_LocalRotation.x
@@ -502,6 +646,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4000010641120276, guid: 5e066acaf27e80e4087b54d44b324159, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010641120276, guid: 5e066acaf27e80e4087b54d44b324159, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e066acaf27e80e4087b54d44b324159, type: 2}
   m_IsPrefabParent: 0
@@ -514,15 +666,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: b2eaa8069b13a409fb10dca46b66cee4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.85
+      value: 7.066
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b2eaa8069b13a409fb10dca46b66cee4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.877
+      value: 1.393
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b2eaa8069b13a409fb10dca46b66cee4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.145
+      value: 3.95
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b2eaa8069b13a409fb10dca46b66cee4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -572,6 +724,7 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1800104048}
   m_Enabled: 1
+  m_ExtensionPropertyValues: []
 --- !u!124 &1800104050
 Behaviour:
   m_ObjectHideFlags: 0
@@ -712,3 +865,63 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.11041245, y: 0.08821906, z: 0.3159685}
   m_Center: {x: 0.00011262484, y: 0.04337445, z: -0.0069722086}
+--- !u!114 &2042934254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2042934251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableWhenIdle: 1
+  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  allowedTouchControllers: 0
+  ignoredColliders: []
+  isGrabbable: 1
+  holdButtonToGrab: 1
+  stayGrabbedOnTeleport: 1
+  validDrop: 1
+  grabOverrideButton: 0
+  allowedGrabControllers: 0
+  grabAttachMechanicScript: {fileID: 2042934256}
+  secondaryGrabActionScript: {fileID: 2042934255}
+  isUsable: 0
+  holdButtonToUse: 1
+  useOnlyIfGrabbed: 0
+  pointerActivatesUseAction: 0
+  useOverrideButton: 0
+  allowedUseControllers: 0
+  usingState: 0
+--- !u!114 &2042934255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2042934251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2042934256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2042934251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afa0b205791c9f4496bf2814aeac078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  precisionGrab: 1
+  rightSnapHandle: {fileID: 0}
+  leftSnapHandle: {fileID: 0}
+  throwVelocityWithAttachDistance: 0
+  throwMultiplier: 1
+  onGrabCollisionDelay: 0
+  destroyImmediatelyOnThrow: 1
+  breakForce: 1500
