@@ -9563,7 +9563,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -9575,7 +9575,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 776455863}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.0020424777, y: 0.0062645553, z: 0.009203715}
@@ -11910,9 +11910,7 @@ GameObject:
   m_Component:
   - component: {fileID: 994585534}
   - component: {fileID: 994585533}
-  - component: {fileID: 994585532}
   - component: {fileID: 994585531}
-  - component: {fileID: 994585530}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -11920,18 +11918,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &994585530
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 994585529}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000002, y: 2.0000443, z: 1.0000001}
-  m_Center: {x: -0.0000008940697, y: 0.000061035156, z: -0.00000008940696}
 --- !u!23 &994585531
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11966,19 +11952,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &994585532
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 994585529}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &994585533
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12406,7 +12379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f81bd33c0b8c304abb57634f6244eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleSystem: {fileID: 0}
+  particleSystem: {fileID: 2132258692}
 --- !u!65 &1043525535
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29477,8 +29450,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2132258691}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.22, z: 0}
+  m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_Children:
   - {fileID: 1809348297}
   - {fileID: 452709845}
