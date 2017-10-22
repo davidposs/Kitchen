@@ -11911,7 +11911,6 @@ GameObject:
   - component: {fileID: 994585534}
   - component: {fileID: 994585533}
   - component: {fileID: 994585531}
-  - component: {fileID: 994585530}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -11919,18 +11918,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &994585530
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 994585529}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.45
-  m_Center: {x: 0.000001013279, y: 0.00012207031, z: -0.000000089406996}
 --- !u!23 &994585531
 MeshRenderer:
   m_ObjectHideFlags: 0
