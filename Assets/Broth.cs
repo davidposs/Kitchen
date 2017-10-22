@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Milk : MonoBehaviour {
+public class Broth : MonoBehaviour {
     [SerializeField] private new ParticleSystem particleSystem;
 
 	// Use this for initialization
