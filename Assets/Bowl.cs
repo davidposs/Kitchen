@@ -7,13 +7,12 @@ public class Bowl : MonoBehaviour {
     [SerializeField] private new ParticleSystem particleSystem;
 	private Renderer meshRenderer;
     private int milkDropCount;
-    private const int MAX_VOLUME = 250;
+    private const int MAX_VOLUME = 100;
     // Use this for initialization
     void Start () {
         meshRenderer = cylinder.GetComponent<Renderer>(); 
         meshRenderer.enabled = false;
-        milkDropCount = 0;
-        
+        milkDropCount = 0;   
 	}
 	
 	// Update is called once per frame
@@ -26,7 +25,7 @@ public class Bowl : MonoBehaviour {
         if (other.GetComponent<ParticleSystem>() == particleSystem)
         {
             milkDropCount++;
-            if(milkDropCount >= 250)
+            if(milkDropCount >= MAX_VOLUME)
             {
                 meshRenderer.enabled = true;
             }
