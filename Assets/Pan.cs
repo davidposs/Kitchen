@@ -7,7 +7,7 @@ public class Pan : MonoBehaviour {
     [SerializeField] private new ParticleSystem particleSystem;
     private Renderer meshRenderer;
     private int brothDropCount;
-    private const int MAX_VOLUME = 250;
+    private const int MAX_VOLUME = 100;
     // Use this for initialization
     void Start() {
         meshRenderer = cylinder.GetComponent<Renderer>();
@@ -27,7 +27,7 @@ public class Pan : MonoBehaviour {
         if (other.GetComponent<ParticleSystem>() == particleSystem)
         {
             brothDropCount++;
-            if (brothDropCount >= 250)
+            if (brothDropCount >= MAX_VOLUME)
             {
                 meshRenderer.enabled = true;
             }
