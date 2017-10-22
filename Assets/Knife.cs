@@ -16,8 +16,6 @@ public class Knife : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collission detecteed");
-
         GameObject obj = collision.collider.transform.parent.gameObject;
         if(obj != null)
         {
@@ -32,7 +30,6 @@ public class Knife : MonoBehaviour {
             if (cutObject != null)
             {
                 cutObject.OnCut();
-                Debug.Log("Cut me up boy.");
             }
         }
     }

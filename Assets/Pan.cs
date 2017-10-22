@@ -24,10 +24,8 @@ public class Pan : MonoBehaviour {
 
     public void OnParticleCollision(GameObject other)
     {
-        Debug.Log("Help");
         if (other.GetComponent<ParticleSystem>() == particleSystem)
         {
-            Debug.Log("Tast Broth");
             brothDropCount++;
             if (brothDropCount >= 250)
             {
